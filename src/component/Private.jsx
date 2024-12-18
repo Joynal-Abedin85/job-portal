@@ -7,7 +7,7 @@ const Private = ({children}) => {
     const {user,load} = useContext(Authcontext)
     const location = useLocation()
     if(load){
-        return <span className="loading loading-ring loading-lg"></span>
+        return <span className="loading loading-ring loading-lg min-h-screen"></span>
     }
     if(user){
         return children
